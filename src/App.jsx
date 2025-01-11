@@ -1,5 +1,6 @@
 import "./App.css";
 import Hero from "./components/hero.jsx";
+import Projects from "./components/Projects.jsx";
 import Technologies from "./components/Technologies.jsx";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Hero/>
           <div className="lg:ml-[38%]">
           <Technologies />
+          <Projects/>
           </div>
         </div>
       </div>
