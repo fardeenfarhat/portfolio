@@ -13,9 +13,9 @@ function App() {
             <div className="absolute left-0 right-0 top-[-10%] h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb36,#000)]"></div>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row gap-4">
+        <div className="flex flex-col lg:flex-row">
           <Hero/>
-          <div className="lg:ml-[38%]">
+          <div className="lg:ml-[35%] w-full">
           <Technologies />
           <Projects/>
           </div>

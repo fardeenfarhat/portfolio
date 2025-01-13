@@ -29,7 +29,7 @@ const Projects = () => {
           <div
             key={index}
             onClick={() => openModel(project)}
-            className="flex flex-col gap-5 p-6 border-4 border-neutral-700 w-[350px] rounded-2xl lg:hover:scale-110 duration-1000 lg:hover:shadow-[8px_8px_15px_rgba(0,0,0,0.2),-8px_-8px_15px_rgba(255,255,255,0.2)] lg:hover:bg-neutral-800 cursor-pointer m-auto h-full"
+            className="flex flex-col gap-5 p-6 border-4 border-neutral-700 w-[350px] rounded-2xl lg:hover:scale-110 duration-500 lg:hover:shadow-[8px_8px_15px_rgba(0,0,0,0.2),-8px_-8px_15px_rgba(255,255,255,0.2)] lg:hover:bg-neutral-800 cursor-pointer m-auto h-full"
           >
             <div className="h-[150px] w-full overflow-hidden rounded-t-2xl flex justify-center items-center">
               <img className="cover scale-110" src={project.image} alt="" />
@@ -40,7 +40,7 @@ const Projects = () => {
               {project.technologies.map((tech, index) => (
                 <p
                   key={index}
-                  className="text-purple-400 bg-neutral-950 rounded-2xl p-2 px-4"
+                  className="text-purple-400 bg-neutral-900 rounded-2xl p-2 px-4"
                 >
                   {tech}
                 </p>
@@ -68,7 +68,7 @@ const Projects = () => {
                   src={projects.image}
                   alt={projects.name}
                 />
-                <button className="absolute inset-0 flex items-center justify-center gap-2 text-2xl bg-black bg-opacity-60 lg:md:bg-opacity-50 text-white rounded-2xl transition duration-300 ease-in-out lg:md:opacity-40 lg:md:hover:opacity-100 lg:md:hover:bg-opacity-70" onClick={() => window.open(projects.link, "_blank")}>
+                <button className="absolute inset-0 flex items-center justify-center gap-2 text-2xl bg-black bg-opacity-60 lg:md:bg-opacity-60 text-white rounded-2xl transition duration-300 ease-in-out lg:md:opacity-50 lg:md:hover:opacity-100 lg:md:hover:bg-opacity-70" onClick={() => window.open(projects.link, "_blank")}>
                   <FaGithub className="hover:scale-110 transition-transform duration-300"/>
                   View on GitHub
                 </button>
