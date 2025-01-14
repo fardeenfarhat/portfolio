@@ -4,7 +4,7 @@ import { GrDocumentDownload } from "react-icons/gr";
 import { SiGmail } from "react-icons/si";
 import { IoLocation } from "react-icons/io5";
 import { useState } from "react";
-import myfile from "../assets/Files/FardeenFarhat_CV.pdf"
+import myfile from "../assets/Files/FardeenFarhat_CV.pdf";
 
 const hero = () => {
   const [showPopup, setShowPopup] = useState(false);
