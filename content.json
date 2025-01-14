@@ -38,7 +38,7 @@
         "id": "CB01",
         "name": "Chat Bot",
         "sh_description": "Chat Bot: A Mobile Recommender System made by data scraping and natural language processing",
-        "image": "./public/assets/Images/ChatBot.jpg",
+        "image": "/assets/Images/ChatBot.jpg",
         "description": "<ul><li><b>Developed an intelligent chatbot</b> that answers queries related to mobile phones, helping users identify the best options within their budget.</li><li><b>Implemented web scraping</b> using Python and Selenium to extract product data from daraz.pk, covering 500+ mobile listings from the first five pages.</li><li><b>Designed and maintained a structured database,</b> organizing scraped data for efficient query processing and analysis.</li><li><b>Built a natural language processing (NLP) powered chatbot,</b> capable of responding to user queries such as \"What is the best phone under $300?\" with accurate recommendations based on stored data.</li><li><b>Developed a data visualization dashboard,</b> presenting key insights such as price distributions, top-rated phones, and trending products.</li><li><b>Optimized chatbot performance,</b> achieving an average response time of under 2 seconds per query.</li><li><b>Integrated Flask framework,</b> enabling seamless deployment and user interaction through a web interface.</li><li><b>Utilized libraries such as pandas, nltk, and spacy</b> to preprocess data and enhance the chatbot's ability to understand and process user inputs.</li><li><b>Streamlined deployment and testing,</b> ensuring smooth execution through clear instructions for running the project with minimal setup time.</li></ul>",
         "link":"https://github.com/fardeenfarhat/mo-bot.git",
         "technologies": [
