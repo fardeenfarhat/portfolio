@@ -25,11 +25,11 @@ const hero = () => {
 
   return (
     <div
-      className="lg:fixed top-0 ring-2 ring-gray-600 ring-opacity-10 ring-offset-3 ring-offset-gray-900 w-screen lg:w-2/6 min-h-full pb-10 lg:h-screen backdrop-blur-lg rounded-br-[100px] flex flex-col gap-4 lg:rounded-r-xl lg:shadow-[8px_8px_15px_rgba(0,0,0,0.2),-8px_-8px_15px_rgba(255,255,255,0.2)]
+      className="lg:fixed top-0 ring-2 ring-gray-600 ring-opacity-40 w-screen lg:w-2/6 min-h-full pb-10 lg:h-screen backdrop-blur-lg rounded-br-[100px] flex flex-col gap-4 lg:rounded-r-xl
 "
     >
       <div className="flex justify-center items-center max-w-[400px] lg:w-auto lg:max-w-[400px] px-10 mt-10 mx-auto">
-        <img className="rounded-xl xl:rounded-full" src={Picture} alt="" />
+        <img className="rounded-xl xl:rounded-full" src={Picture} alt="profilePicture" />
       </div>
       <div className="flex justify-center items-center text-white font-thin text-6xl mx-auto px-6 text-center antialiased">
         <h1>Fardeen Farhat</h1>
