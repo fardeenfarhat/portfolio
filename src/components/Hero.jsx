@@ -34,11 +34,11 @@ const hero = () => {
       <div className="flex justify-center items-center text-white font-thin text-6xl mx-auto px-6 text-center antialiased">
         <h1>Fardeen Farhat</h1>
       </div>
-      <div className="text-base opacity-65 flex items-center justify-center gap-2 cursor-pointer hover:scale-110 duration-500 relative" onClick={copytext}>
-          <SiGmail /> fardeenfarhat@gmail.com
+      <div className="text-base flex items-center justify-center gap-2 cursor-pointer hover:scale-110 duration-500 relative" onClick={copytext}>
+          <SiGmail className="opacity-65"/> <span className="opacity-65">fardeenfarhat@gmail.com</span>
           {showPopup && (
-        <div className="absolute right-0 top-0 bg-green-500 text-white px-4 py-2 rounded shadow-lg animate-fade-in-out">
-          Text copied to clipboard!
+        <div className="absolute top-0 bg-green-500 text-white px-6 py-2 rounded shadow-lg animate-fade-in-out">
+          Email copied to clipboard!
         </div>
       )}
         </div>
@@ -48,9 +48,7 @@ const hero = () => {
       </div>
       <div className="flex justify-center items-center text-white text-lg max-w-[400px] mx-auto mt-4 px-10">
         <p>
-          I'm a software engineer with a passion for building scalable and
-          efficient systems. I'm always looking for new challenges and
-          opportunities to learn and grow.
+        I am a 6th semester student studying Artificial Intelligence, with a keen interest in learning how AI works. I also enjoy web development and building simple, functional websites in my free time.
         </p>
       </div>
       <div className="flex justify-center items-center flex-wrap text-white text-3xl mt-4 mx-auto gap-6 px-10">

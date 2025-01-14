@@ -3,6 +3,7 @@ import Hero from "./components/hero.jsx";
 import Projects from "./components/Projects.jsx";
 import Technologies from "./components/Technologies.jsx";
 
+
 function App() {
   return (
     <>
