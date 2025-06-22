@@ -1,0 +1,26 @@
+[
+  {
+    "title": "AI Engineer Intern",
+    "company": "DevNeuron (Remote)",
+    "location": "Sunnyvale, CA, USA",
+    "period": "June 2025 - Present",
+    "description": "Contributing to a security-focused evaluation framework for analyzing LLM agent behavior and working on identifying vulnerabilities to improve agent safety in real-world environments.",
+    "technologies": ["Python", "LLM", "Security Analysis"]
+  },
+  {
+    "title": "Lab Demonstrator - Database Systems",
+    "company": "FAST NUCES",
+    "location": "Islamabad, Pakistan",
+    "period": "Jan 2025 - June 2025",
+    "description": "Conducted lab sessions on relational databases, SQL, normalization, and indexing. Provided assistance in debugging SQL queries and mentoring students on database concepts.",
+    "technologies": ["SQL", "Relational Databases", "Normalization"]
+  },
+  {
+    "title": "Lab Demonstrator - Artificial Intelligence",
+    "company": "FAST NUCES",
+    "location": "Islamabad, Pakistan",
+    "period": "Jan 2025 - June 2025",
+    "description": "Facilitated sessions on search algorithms, supervised learning, and intelligent agent design. Assisted students with ML model implementation and guided discussions on AI ethics.",
+    "technologies": ["Python", "Machine Learning", "AI Ethics"]
+  }
+] 

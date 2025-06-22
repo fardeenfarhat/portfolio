@@ -8,42 +8,39 @@ import { FaNodeJs } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 
 const Technologies = () => {
+  const techStack = [
+    { icon: RiReactjsLine, name: "React", color: "text-react", delay: "0.1s" },
+    { icon: FaNodeJs, name: "NodeJS", color: "text-nodejs", delay: "0.2s" },
+    { icon: SiPython, name: "Python", color: "text-python", delay: "0.3s" },
+    { icon: SiMongodb, name: "MongoDB", color: "text-mongodb", delay: "0.4s" },
+    { icon: SiTailwindcss, name: "TailwindCSS", color: "text-tailwind", delay: "0.5s" },
+    { icon: TbBrandCpp, name: "C++", color: "text-cpp", delay: "0.6s" },
+    { icon: SiJavascript, name: "JavaScript", color: "text-javascript", delay: "0.7s" },
+    { icon: SiMysql, name: "MySQL", color: "text-mysql", delay: "0.8s" },
+  ];
+
   return (
-    <div className="p-2 flex flex-col gap-10 border-neutral-800 mt-10 my-auto">
-      <h1 className="my-6 text-center text-5xl font-thin">Technologies</h1>
-      <div className="flex flex-wrap items-center justify-center gap-4 gap-y-10">
-        <div className="rounded-2xl p-4 border-4 border-neutral-700 animate-bounce">
-          <RiReactjsLine className="text-7xl text-react" />
-          <h1 className="text-center mt-2">React</h1>
-        </div>
-        <div className="rounded-2xl p-4 border-4 border-neutral-700 animate-bounce [animation-delay:0.2s]">
-          <FaNodeJs className="text-7xl text-nodejs" />
-          <h1 className="text-center mt-2">NodeJS</h1>
-        </div>
-        <div className="rounded-2xl p-4 border-4 border-neutral-700 animate-bounce [animation-delay:0.3s]">
-          <SiPython className="text-7xl text-python" />
-          <h1 className="text-center mt-2">Python</h1>
-        </div>
-        <div className="rounded-2xl p-4 border-4 border-neutral-700 animate-bounce [animation-delay:0.4s]">
-          <SiMongodb className="text-7xl text-mongodb" />
-          <h1 className="text-center mt-2">MongoDB</h1>
-        </div>
-        <div className="rounded-2xl p-4 border-4 border-neutral-700 animate-bounce [animation-delay:0.5s]">
-          <SiTailwindcss className="text-7xl text-tailwind" />
-          <h1 className="text-center mt-2">TailwindCSS</h1>
-        </div>
-        <div className="rounded-2xl p-4 border-4 border-neutral-700 animate-bounce [animation-delay:0.6s]">
-          <TbBrandCpp className="text-7xl text-cpp" />
-          <h1 className="text-center mt-2">C++</h1>
-        </div>
-        <div className="rounded-2xl p-4 border-4 border-neutral-700 animate-bounce [animation-delay:0.7s]">
-          <SiJavascript className="text-7xl text-javascript" />
-          <h1 className="text-center mt-2">JavaScript</h1>
-        </div>
-        <div className="rounded-2xl p-4 border-4 border-neutral-700 animate-bounce [animation-delay:0.8s]">
-          <SiMysql className="text-7xl text-mysql" />
-          <h1 className="text-center mt-2">MySQL</h1>
-        </div>
+    <div className="p-6 flex flex-col gap-6 border-neutral-800 mt-6 my-auto pb-10">
+      <h1 className="my-4 mb-4 text-center text-5xl lg:text-6xl font-poppins font-light gradient-text text-shadow">
+        Technologies
+      </h1>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-center max-w-4xl mx-auto">
+        {techStack.map((tech, index) => (
+          <div 
+            key={index}
+            className="rounded-xl p-4 border border-neutral-700/30 bg-black/10 backdrop-blur-sm hover-lift group animate-fade-in-up"
+            style={{ animationDelay: `${index * 0.1}s` }}
+          >
+            <div className="flex flex-col items-center gap-2">
+              <tech.icon 
+                className={`text-5xl lg:text-6xl ${tech.color} group-hover:scale-110 transition-transform duration-300`} 
+              />
+              <h2 className="text-center text-sm font-inter font-medium text-white group-hover:text-purple-300 transition-colors duration-300">
+                {tech.name}
+              </h2>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

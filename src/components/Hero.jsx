@@ -6,10 +6,10 @@ import { IoLocation } from "react-icons/io5";
 import { useState } from "react";
 import myfile from "../assets/Files/FardeenFarhat_CV.pdf";
 
-const hero = () => {
+const Hero = () => {
   const [showPopup, setShowPopup] = useState(false);
   const copytext = () => {
-    navigator.clipboard.writeText("fardeenfarhat@gmail");
+    navigator.clipboard.writeText("fardeenfarhat@gmail.com");
     setShowPopup(true);
     setTimeout(() => {
       setShowPopup(false);
@@ -24,49 +24,66 @@ const hero = () => {
   };
 
   return (
-    <div
-      className="lg:fixed top-0 ring-2 ring-gray-600 ring-opacity-40 w-screen lg:w-2/6 min-h-full pb-10 lg:h-screen backdrop-blur-lg rounded-br-[100px] flex flex-col gap-4 lg:rounded-r-xl
-"
-    >
-      <div className="flex justify-center items-center max-w-[400px] lg:w-auto lg:max-w-[400px] px-10 mt-10 mx-auto">
-        <img className="rounded-xl xl:rounded-full" src={Picture} alt="profilePicture" />
-      </div>
-      <div className="flex justify-center items-center text-white font-thin text-6xl mx-auto px-6 text-center antialiased">
-        <h1>Fardeen Farhat</h1>
-      </div>
-      <div className="text-base flex items-center justify-center gap-2 cursor-pointer hover:scale-110 duration-500 relative" onClick={copytext}>
-          <SiGmail className="opacity-65"/> <span className="opacity-65">fardeenfarhat@gmail.com</span>
-          {showPopup && (
-        <div className="absolute top-0 bg-green-500 text-white px-6 py-2 rounded shadow-lg animate-fade-in-out">
-          Email copied to clipboard!
+    <div className="lg:fixed top-0 ring-2 ring-gray-600/40 w-screen lg:w-2/6 min-h-full pb-10 lg:h-screen backdrop-blur-custom rounded-br-[100px] flex flex-col gap-6 lg:rounded-r-xl glass-card animate-slide-in">
+      {/* Profile Picture */}
+      <div className="flex justify-center items-center max-w-[400px] lg:w-auto lg:max-w-[400px] px-10 mt-12 mx-auto">
+        <div className="relative group">
+          <img 
+            className="rounded-2xl xl:rounded-full w-56 h-56 lg:w-64 lg:h-64 object-cover shadow-2xl hover-lift transition-all duration-500" 
+            src={Picture} 
+            alt="Fardeen Farhat" 
+          />
+          <div className="absolute inset-0 rounded-2xl xl:rounded-full bg-gradient-to-r from-purple-500/30 to-pink-500/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="absolute inset-0 rounded-2xl xl:rounded-full ring-4 ring-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         </div>
-      )}
-        </div>
-      <div className="flex justify-center items-center px-10 text-white text-md  text-opacity-50">
-        <IoLocation />
+      </div>
+      
+      {/* Name */}
+      <div className="flex justify-center items-center text-white font-poppins font-light text-5xl lg:text-6xl mx-auto px-6 text-center antialiased">
+        <h1 className="gradient-text text-shadow">Fardeen Farhat</h1>
+      </div>
+      
+      {/* Email */}
+      <div className="text-base flex items-center justify-center gap-3 cursor-pointer hover:scale-105 duration-300 relative group" onClick={copytext}>
+        <SiGmail className="opacity-70 group-hover:opacity-100 transition-opacity"/> 
+        <span className="opacity-70 group-hover:opacity-100 transition-opacity font-inter">fardeenfarhat@gmail.com</span>
+        {showPopup && (
+          <div className="absolute -top-12 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg animate-fade-in-up text-sm font-medium">
+            Email copied to clipboard!
+          </div>
+        )}
+      </div>
+      
+      {/* Location */}
+      <div className="flex justify-center items-center px-10 text-white text-md opacity-60 font-inter">
+        <IoLocation className="mr-2" />
         <p>Lahore, Pakistan</p>
       </div>
-      <div className="flex justify-center items-center text-white text-lg max-w-[400px] mx-auto mt-4 px-10">
-        <p>
-        I am a 6th semester student studying Artificial Intelligence, with a keen interest in learning how AI works. I also enjoy web development and building simple, functional websites in my free time.
+      
+      {/* Bio */}
+      <div className="flex justify-center items-center text-white text-lg max-w-[400px] mx-auto mt-2 px-10">
+        <p className="font-inter leading-relaxed text-center">
+          I am a 7th semester student studying <span className="gradient-text font-medium">Artificial Intelligence</span>, with a keen interest in learning how AI works. I also enjoy <span className="gradient-text font-medium">web development</span> and building simple, functional websites in my free time.
         </p>
       </div>
-      <div className="flex justify-center items-center flex-wrap text-white text-3xl mt-4 mx-auto gap-6 px-10">
+      
+      {/* Social Links */}
+      <div className="flex justify-center items-center flex-wrap text-white text-3xl mt-6 mx-auto gap-8 px-10">
         <FaLinkedin 
-        className="hover:scale-125 duration-500 hover:text-gray-600 cursor-pointer box-shadow-[8px_8px_15px_rgba(0,0,0,0.2),-8px_-8px_15px_rgba(255,255,255,0.2)]"
-          onClick={() =>
-            window.open("https://www.linkedin.com/in/fardeen-farhat/")
-          }
+          className="hover:scale-125 duration-300 hover:text-purple-400 cursor-pointer hover-lift"
+          onClick={() => window.open("https://www.linkedin.com/in/fardeen-farhat/")}
         />
         <FaGithub
-          className="hover:scale-125 duration-500 hover:text-gray-600 cursor-pointer box-shadow-[8px_8px_15px_rgba(0,0,0,0.2),-8px_-8px_15px_rgba(255,255,255,0.2)]"
+          className="hover:scale-125 duration-300 hover:text-purple-400 cursor-pointer hover-lift"
           onClick={() => window.open("https://github.com/fardeenfarhat")}
         />
-        <GrDocumentDownload className="hover:scale-125 duration-500 hover:text-gray-600 cursor-pointer box-shadow-[8px_8px_15px_rgba(0,0,0,0.2),-8px_-8px_15px_rgba(255,255,255,0.2)]"
-          onClick={downlaodcv}/>
+        <GrDocumentDownload 
+          className="hover:scale-125 duration-300 hover:text-purple-400 cursor-pointer hover-lift"
+          onClick={downlaodcv}
+        />
       </div>
     </div>
   );
 };
 
-export default hero;
+export default Hero;

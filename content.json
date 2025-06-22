@@ -1,71 +1,86 @@
-
 [
     {
-        "id": "DS01",
-        "name": "Duck Shooter",
-        "sh_description": "Duck Shooter: A Simpsons-Themed Assembly Game",
-        "image": "/assets/Images/duckshooter.PNG",
-        "description": "<ul><li><b>Developed a 2D shooting game </b> entirely in Assembly language, themed around The Simpsons, where players aim to shoot a sprite of Homer Simpson.</li><li><b> Designed and implemented game logic</b> from scratch, including scoring, sprite movement, and player input handling.</li><li><b> Programmed sprite animations</b> for Homer Simpson and projectiles using low-level graphics routines and bitwise operations.</li><li><b> Optimized performance </b>by leveraging efficient memory management and CPU instructions to ensure smooth gameplay on legacy systems.</li><li><b> Integrated user interaction</b> with real-time input handling for accurate sprite targeting using keyboard controls.</li><li><b> Implemented dynamic difficulty scaling,</b> with increasing speed and complexity as the player's score progresses.</li><li><b> Debugged and tested the game</b> rigorously, ensuring it ran seamlessly across different x86 platforms.</li><li><b> Utilized low-level debugging tools</b> to identify and fix errors in code, improving overall reliability.</li><li><b>Achieved engaging gameplay</b> by incorporating sound effects and score displays using assembly-level I/O operations.</li><li><b> Demonstrated creativity and technical expertise</b> by crafting a unique and functional game within the constraints of Assembly language.</ul>",
-        "link":"https://github.com/fardeenfarhat/Duck-Shooter.git",
-        "technologies": [
-            "Assembly Language"
-        ]
-
+        "id": "CNN01",
+        "name": "CNN Ensemble for Pneumonia Detection",
+        "sh_description": "Improved pneumonia detection by 19% using a multi-kernel CNN ensemble with attention layers.",
+        "image": "/portfolio/Images/CNN.jpg",
+        "description": "<ul><li><b>State-of-the-Art Reproduction:</b> Successfully reproduced a published, high-performing CNN ensemble, demonstrating a deep understanding of advanced computer vision architectures.</li><li><b>Advanced Kernel Strategy:</b> Implemented a multi-kernel approach using 3x3, 5x5, and 7x7 kernels to capture features at different scales, enhancing the model's diagnostic capabilities.</li><li><b>Attention-Based Improvement:</b> Integrated sophisticated attention layers into the model, which improved recall by a significant 19% on challenging chest X-ray datasets.</li><li><b>Optimized Performance:</b> Employed dynamic thresholding techniques to fine-tune the classification boundary, achieving an impressive F1-score of 0.94 and balancing precision with recall.</li></ul>",
+        "link": "https://github.com/ZainUlWahab/Pneumonia-Detection-Model",
+        "technologies": ["Python", "TensorFlow", "PyTorch", "Scikit-learn"]
+    },
+    {
+        "id": "TW01",
+        "name": "TrendWhisper: AI Story Generator",
+        "sh_description": "Built a full-stack app that generates themed stories from live Google Trends using Qwen2.5-7B.",
+        "image": "/portfolio/Images/TM.jpg",
+        "description": "<ul><li><b>Full-Stack AI Application:</b> Developed a complete, end-to-end application that transforms real-time Google Trends data into engaging, themed stories using the powerful Qwen2.5-7B language model.</li><li><b>Microservices Architecture:</b> Designed a robust backend with gRPC-based microservices, ensuring scalability and efficient communication between services.</li><li><b>Interactive Frontend:</b> Built a user-friendly interface with Gradio that allows for genre selection and other story customizations, providing a rich user experience.</li><li><b>Advanced Text-to-Speech:</b> Implemented high-quality XTTS voice synthesis to produce natural-sounding audio narration for the generated stories, with Gemini Pro as a reliable fallback.</li><li><b>Containerized Deployment:</b> Utilized Docker to containerize the application, simplifying deployment and ensuring consistency across different environments.</li></ul>",
+        "link": "https://github.com/ZainUlWahab/story-generator",
+        "technologies": ["Python", "gRPC", "Qwen2.5-7B", "XTTS", "Gradio", "Docker"]
     },
     {
         "id": "SPA01",
         "name": "Speaker Age Prediction",
         "sh_description": "Speaker Age Prediction: A Machine Learning Model for Speaker Age Estimation",
-        "image": "/assets/images/SAP.jpg",
-        "description": "<ul><li><b>Developed a predictive machine learning model</b> capable of estimating speaker age with an accuracy rate of <b>85%</b> using acoustic features extracted from audio recordings.</li><li><b>Extracted and analyzed 5 key acoustic features,</b> including pitch, formant frequencies, intensity, duration, and spectral characteristics, resulting in feature sets with over <b>10,000 data points</b> per dataset.</li><br><li><b>Preprocessed data across 4 distinct datasets,</b><ul> implementing:<li><b>Dataset 1:</b> Dropped <b>15%</b> of rows with missing values to ensure complete data integrity.</li><li><b>Dataset 2:</b> Imputed missing values using the mean, preserving <b>100%</b> of the dataset’s statistical properties.</li><li><b>Dataset 3:</b> Applied mode imputation for <b>20%</b> of categorical values.</li><li><b>Dataset 4:</b> Used median imputation, improving robustness against <b>outliers</b> by over <b>30%</b>.</li></ul><br><li><b>Normalized and scaled</b> all features to a standard range, reducing computational complexity and achieving <b>20% faster model convergence</b>.</li><li><b>Achieved an Mean Absolute Error (MAE)</b> score of <b>0.13</b> and a <b>Mean Squared Error (MSE)</b> of <b>0.20</b> on the best-performing model.</li><li><b>Compared preprocessing strategies,</b> observing up to 15% improvement in prediction accuracy with median imputation.</li><li><b>Enhanced practical applications,</b> demonstrating potential use cases for voice-based personalization, targeted advertising, and forensic analysis.</li><li><b>Completed project within 2 weeks,</b> involving <b>2 team members,</b> processing <b>200+ hours of audio data</b> and producing <b>5 distinct model evaluation reports.</b></li></ul>",
+        "image": "/portfolio/Images/SAP.jpg",
+        "description": "<ul><li><b>Developed a predictive machine learning model</b> capable of estimating speaker age with an accuracy rate of <b>85%</b> using acoustic features extracted from audio recordings.</li><li><b>Extracted and analyzed 5 key acoustic features,</b> including pitch, formant frequencies, intensity, duration, and spectral characteristics, resulting in feature sets with over <b>10,000 data points</b> per dataset.</li><br><li><b>Preprocessed data across 4 distinct datasets,</b><ul> implementing:<li><b>Dataset 1:</b> Dropped <b>15%</b> of rows with missing values to ensure complete data integrity.</li><li><b>Dataset 2:</b> Imputed missing values using the mean, preserving <b>100%</b> of the dataset's statistical properties.</li><li><b>Dataset 3:</b> Applied mode imputation for <b>20%</b> of categorical values.</li><li><b>Dataset 4:</b> Used median imputation, improving robustness against <b>outliers</b> by over <b>30%</b>.</li></ul><br><li><b>Normalized and scaled</b> all features to a standard range, reducing computational complexity and achieving <b>20% faster model convergence</b>.</li><li><b>Achieved an Mean Absolute Error (MAE)</b> score of <b>0.13</b> and a <b>Mean Squared Error (MSE)</b> of <b>0.20</b> on the best-performing model.</li><li><b>Compared preprocessing strategies,</b> observing up to 15% improvement in prediction accuracy with median imputation.</li><li><b>Enhanced practical applications,</b> demonstrating potential use cases for voice-based personalization, targeted advertising, and forensic analysis.</li><li><b>Completed project within 2 weeks,</b> involving <b>2 team members,</b> processing <b>200+ hours of audio data</b> and producing <b>5 distinct model evaluation reports.</b></li></ul>",
         "link":"https://github.com/fardeenfarhat/speaker-age-prediction.git",
         "technologies": [
-            "Python"
+            "Python", "Scikit-learn", "Pandas", "NumPy"
         ]
     },
     {
         "id": "FDP01",
         "name": "Flight Delay Prediction",
         "sh_description": "Developed a predictive model to forecast flight departure delays using historical flight and weather data.",
-        "image": "/assets/Images/FDP.jpg",
+        "image": "/portfolio/Images/FDP.jpg",
         "description": "<ul><li><b>Developed a predictive model</b> to forecast flight departure delays, integrating weather data and flight records for improved accuracy, achieving 70% accuracy.</li><li><b>Analyzed and processed datasets</b> containing over <b>100,000 flight records</b> and weather data points, ensuring data consistency and integrity through comprehensive cleaning and feature engineering.</li><li><b>Engineered over 10 features,</b> including temporal attributes (e.g., day of the week, hour, and month) and weather variables (e.g., temperature, wind speed).</li><li><b>Conducted Exploratory Data Analysis (EDA),</b> visualizing delay patterns with histograms, line charts, and correlation heatmaps, revealing key trends such as peak delays during <b>specific hours</b> and <b>seasonal influences.</b></li><br><li><b>Implemented classification models,</b> achieving:</li><ul><li><b>Binary classification</b> accuracy of <b>91%,</b> F1-score of <b>95%,</b> and precision of <b>94%.</b></li><li><b>Multi-class classification</b> accuracy of <b>90%,</b> effectively categorizing delays into four distinct groups (no delay, short, moderate, long).</li></ul><br><li><b>Trained regression models</b> to predict delay durations, with evaluation metrics:</li><ul><li>Mean Absolute Error (MAE): <b>5.63 minutes</b>.</li><li>Root Mean Square Error (RMSE):<b> 8.42 minutes.</b></li></ul><br><li><b>Optimized model performance through hyperparameter tuning</b> using grid search and random search, improving prediction accuracy by up to <b>7%.</b></li><li><b>Validated models</b> using k-fold cross-validation (k=5), ensuring robustness and preventing overfitting.</li><li><b>Tested and deployed models,</b> generating predictions on the Kaggle test dataset and submitting in the required format for evaluation.</li><br><ul><li>Addressed key <b>challenges</b> such as:</li><b><li>Handling missing data</b> with advanced imputation techniques.</li><li>    Integrating weather and flight datasets seamlessly.</li><li>Balancing data for better classification performance.</li></ul><br><li><b>Utilized advanced technologies,</b> including Python, Pandas, NumPy, Scikit-learn, Matplotlib, and Seaborn, to build and visualize models effectively.</li></ul>",
         "link":"https://github.com/fardeenfarhat/flight-departure-delay",
         "technologies": [
-            "Python"
+            "Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn"
         ]
     },
     {
         "id": "CB01",
         "name": "Chat Bot",
         "sh_description": "Chat Bot: A Mobile Recommender System made by data scraping and natural language processing",
-        "image": "/assets/Images/ChatBot.jpg",
+        "image": "/portfolio/Images/ChatBot.jpg",
         "description": "<ul><li><b>Developed an intelligent chatbot</b> that answers queries related to mobile phones, helping users identify the best options within their budget.</li><li><b>Implemented web scraping</b> using Python and Selenium to extract product data from daraz.pk, covering 500+ mobile listings from the first five pages.</li><li><b>Designed and maintained a structured database,</b> organizing scraped data for efficient query processing and analysis.</li><li><b>Built a natural language processing (NLP) powered chatbot,</b> capable of responding to user queries such as \"What is the best phone under $300?\" with accurate recommendations based on stored data.</li><li><b>Developed a data visualization dashboard,</b> presenting key insights such as price distributions, top-rated phones, and trending products.</li><li><b>Optimized chatbot performance,</b> achieving an average response time of under 2 seconds per query.</li><li><b>Integrated Flask framework,</b> enabling seamless deployment and user interaction through a web interface.</li><li><b>Utilized libraries such as pandas, nltk, and spacy</b> to preprocess data and enhance the chatbot's ability to understand and process user inputs.</li><li><b>Streamlined deployment and testing,</b> ensuring smooth execution through clear instructions for running the project with minimal setup time.</li></ul>",
         "link":"https://github.com/fardeenfarhat/mo-bot.git",
         "technologies": [
-            "Python",
-            "Flask"
+            "Python", "Flask", "Selenium", "Pandas", "NLTK", "Spacy"
         ]
     },
     {
         "id": "TTG01",
         "name": "TimeTable Generator",
         "sh_description": "Developed a university exam timetable generator using Genetic Algorithm, achieving a 95% reduction in scheduling conflicts and improving overall operational efficiency.",
-        "image": "/assets/Images/TTG.jpg",
+        "image": "/portfolio/Images/TTG.jpg",
         "description": "<ul><li><b>Designed and implemented a university exam timetable generator</b> using <b>Genetic Algorithm (GA)</b> to automate scheduling for <b>50+ courses</b> across <b>10 classrooms</b> and <b>20+ invigilators</b>.</li><li><b>Achieved a 95% reduction in scheduling conflicts</b> by enforcing strict hard constraints and optimizing soft constraints.</li><li><b>Leveraged Python</b> and libraries like <b>NumPy</b> to efficiently handle <b>1,000+ iterations per schedule generation,</b> improving accuracy and performance.</li><li><b>Enhanced scheduling efficiency</b> through <b>roulette wheel selection,</b> achieving a <b>20% faster convergence</b> compared to baseline random selection methods.</li><li><b>Applied uniform crossover and mutation operations</b> to explore <b>10,000+ potential solutions,</b> ensuring optimized timetables across multiple generations.</li><li><b>Reduced instances of back-to-back exams for students by 80%,</b> improving student satisfaction and comfort.</li><li><b>Generated scalable timetables</b> suitable for multi-course, multi-invigilator scenarios with real-time adaptability to changing inputs.</li><li><b>Documented and visualized fitness score improvements</b> over <b>100+ generations,</b> demonstrating consistent optimization trends.</li></ul>",
         "link":"https://github.com/fardeenfarhat/timeTable_Gen.git",
         "technologies": [
-            "Python"
+            "Python", "NumPy"
         ]
     },
     {
         "id": "SPP01",
         "name": "Shortest Path Finder",
         "sh_description": "Developed a C++ application to calculate the shortest travel path between two cities using graph-based algorithms.",
-        "image": "/assets/Images/SPP.jpg",
+        "image": "/portfolio/Images/SPP.jpg",
         "description": "<ul><li>Designed a C++ program to find the <b>most efficient route</b> between cities through graph representations.</li><li>Utilized the <b>Breadth-First Search (BFS) algorithm</b> to determine the shortest path between two cities.</li><li>Represented cities and their <b>connections as a graph,</b> allowing for flexible and scalable pathfinding.</li><li>Integrated intuitive functionality for <b>users to input</b> cities and retrieve optimal travel paths.</li><li> Successfully applied the BFS algorithm to compute the shortest path with a time complexity of<b> O(V + E),</b> where V is the number of cities and E is the number of connections.</li></ul>",
         "link":"https://github.com/fardeenfarhat/shortest-path.git",
         "technologies": [
-            "CPP"
+            "C++"
+        ]
+    },
+    {
+        "id": "DS01",
+        "name": "Duck Shooter",
+        "sh_description": "Duck Shooter: A Simpsons-Themed Assembly Game",
+        "image": "/portfolio/Images/duckshooter.PNG",
+        "description": "<ul><li><b>Developed a 2D shooting game </b> entirely in Assembly language, themed around The Simpsons, where players aim to shoot a sprite of Homer Simpson.</li><li><b> Designed and implemented game logic</b> from scratch, including scoring, sprite movement, and player input handling.</li><li><b> Programmed sprite animations</b> for Homer Simpson and projectiles using low-level graphics routines and bitwise operations.</li><li><b> Optimized performance </b>by leveraging efficient memory management and CPU instructions to ensure smooth gameplay on legacy systems.</li><li><b> Integrated user interaction</b> with real-time input handling for accurate sprite targeting using keyboard controls.</li><li><b> Implemented dynamic difficulty scaling,</b> with increasing speed and complexity as the player's score progresses.</li><li><b> Debugged and tested the game</b> rigorously, ensuring it ran seamlessly across different x86 platforms.</li><li><b> Utilized low-level debugging tools</b> to identify and fix errors in code, improving overall reliability.</li><li><b>Achieved engaging gameplay</b> by incorporating sound effects and score displays using assembly-level I/O operations.</li><li><b> Demonstrated creativity and technical expertise</b> by crafting a unique and functional game within the constraints of Assembly language.</ul>",
+        "link":"https://github.com/fardeenfarhat/Duck-Shooter.git",
+        "technologies": [
+            "Assembly Language"
         ]
     }
 ]
