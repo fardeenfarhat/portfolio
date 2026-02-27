@@ -19,6 +19,13 @@ export default {
         cpp: '#00599C',
         nodejs: '#339933',
         mysql: '#4479A1',
+        fastapi: '#009688',
+        docker: '#2496ED',
+        aws: '#FF9900',
+        git: '#F05032',
+        pandas: '#E0E0E0',
+        scikitlearn: '#F7931E',
+        pytorch: '#EE4C2C',
         'purple-glow': '#a855f7',
         'pink-glow': '#ec4899',
       },
@@ -87,7 +94,7 @@ export default {
               'animation-delay': '3s',
           },
           '.grid-cols-auto': {
-          'grid-template-columns': 'repeat(auto-fill, minmax(350px, 1fr))',
+          'grid-template-columns': 'repeat(auto-fill, minmax(min(100%, 350px), 1fr))',
         },
         '.text-gradient': {
           'background': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',

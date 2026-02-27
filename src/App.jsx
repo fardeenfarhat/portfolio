@@ -10,7 +10,7 @@ function App() {
     <>
       <div className="overflow-x-hidden text-neutral-300 antialiased font-inter smooth-scroll">
         {/* Enhanced Background */}
-        <div className="fixed top-0 left-0 right-0 bottom-0 -z-10 h-full w-full">
+        <div className="fixed top-0 left-0 right-0 bottom-0 -z-10 h-full w-full overflow-hidden">
           <div className="relative h-full w-full bg-gradient-to-br from-black via-gray-900 to-black">
             {/* Animated gradient orbs */}
             <div className="absolute left-0 right-0 top-[-10%] h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb15,#000)] animate-float"></div>
@@ -27,7 +27,7 @@ function App() {
         {/* Main Content */}
         <div className="flex flex-col lg:flex-row min-h-screen">
           <Hero />
-          <div className="lg:ml-[35%] w-full">
+          <div className="lg:ml-[35%] lg:w-[65%] w-full">
             <Technologies />
             <Experience />
             <Projects />

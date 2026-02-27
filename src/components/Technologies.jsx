@@ -1,22 +1,28 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { SiMongodb } from "react-icons/si";
-import { SiTailwindcss } from "react-icons/si";
-import { SiJavascript } from "react-icons/si";
-import { SiPython } from "react-icons/si";
+import { SiMongodb, SiTailwindcss, SiJavascript, SiPython, SiMysql, SiFastapi, SiPandas, SiScikitlearn, SiPytorch } from "react-icons/si";
 import { TbBrandCpp } from "react-icons/tb";
-import { FaNodeJs } from "react-icons/fa";
-import { SiMysql } from "react-icons/si";
+import { FaNodeJs, FaDocker, FaAws, FaGitAlt } from "react-icons/fa";
 
 const Technologies = () => {
   const techStack = [
-    { icon: RiReactjsLine, name: "React", color: "text-react", delay: "0.1s" },
-    { icon: FaNodeJs, name: "NodeJS", color: "text-nodejs", delay: "0.2s" },
-    { icon: SiPython, name: "Python", color: "text-python", delay: "0.3s" },
-    { icon: SiMongodb, name: "MongoDB", color: "text-mongodb", delay: "0.4s" },
-    { icon: SiTailwindcss, name: "TailwindCSS", color: "text-tailwind", delay: "0.5s" },
+    // Row 1 — Core AI / Python
+    { icon: SiPython, name: "Python", color: "text-python", delay: "0.1s" },
+    { icon: SiPytorch, name: "PyTorch", color: "text-pytorch", delay: "0.2s" },
+    { icon: SiScikitlearn, name: "Scikit-learn", color: "text-scikitlearn", delay: "0.3s" },
+    { icon: SiPandas, name: "Pandas", color: "text-pandas", delay: "0.4s" },
+    { icon: SiFastapi, name: "FastAPI", color: "text-fastapi", delay: "0.5s" },
+    // Row 2 — Systems & Backend
     { icon: TbBrandCpp, name: "C++", color: "text-cpp", delay: "0.6s" },
     { icon: SiJavascript, name: "JavaScript", color: "text-javascript", delay: "0.7s" },
-    { icon: SiMysql, name: "MySQL", color: "text-mysql", delay: "0.8s" },
+    { icon: FaNodeJs, name: "NodeJS", color: "text-nodejs", delay: "0.8s" },
+    { icon: SiMongodb, name: "MongoDB", color: "text-mongodb", delay: "0.9s" },
+    { icon: SiMysql, name: "MySQL", color: "text-mysql", delay: "1.0s" },
+    // Row 3 — Web & DevOps
+    { icon: RiReactjsLine, name: "React", color: "text-react", delay: "1.1s" },
+    { icon: SiTailwindcss, name: "TailwindCSS", color: "text-tailwind", delay: "1.2s" },
+    { icon: FaDocker, name: "Docker", color: "text-docker", delay: "1.3s" },
+    { icon: FaAws, name: "AWS", color: "text-aws", delay: "1.4s" },
+    { icon: FaGitAlt, name: "Git", color: "text-git", delay: "1.5s" },
   ];
 
   return (
@@ -24,7 +30,7 @@ const Technologies = () => {
       <h1 className="my-4 mb-4 text-center text-5xl lg:text-6xl font-poppins font-light gradient-text text-shadow">
         Technologies
       </h1>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-center max-w-4xl mx-auto">
+      <div className="grid grid-cols-3 md:grid-cols-5 gap-6 items-center justify-center max-w-4xl mx-auto">
         {techStack.map((tech, index) => (
           <div 
             key={index}

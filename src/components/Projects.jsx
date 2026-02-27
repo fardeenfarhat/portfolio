@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaGithub, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import content from "../../content.json";
 
@@ -15,6 +15,15 @@ const Projects = () => {
   const [isModelOpen, setIsModelOpen] = useState(false);
   const [animationClass, setAnimationClass] = useState("animate-fade-in-up");
   const [showAll, setShowAll] = useState(false);
+
+  useEffect(() => {
+    if (isModelOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [isModelOpen]);
 
   const openModel = (project) => {
     setIsModelOpen(true);
@@ -49,7 +58,7 @@ const Projects = () => {
           <div
             key={index}
             onClick={() => openModel(project)}
-            className="flex flex-col gap-6 p-6 border border-neutral-700/50 w-[350px] rounded-2xl hover-lift glass-card cursor-pointer m-auto h-full group animate-fade-in-up"
+            className="flex flex-col gap-6 p-6 border border-neutral-700/50 w-full rounded-2xl hover-lift glass-card cursor-pointer m-auto h-full group animate-fade-in-up"
             style={{ animationDelay: `${index * 0.1}s` }}
           >
             <div className="h-[180px] w-full overflow-hidden rounded-xl flex justify-center items-center relative">
@@ -99,7 +108,7 @@ const Projects = () => {
       {isModelOpen && projects && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex justify-center items-center z-50 p-4" onClick={handleOverlayClick}>
           <div
-            className={`backdrop-blur-lg bg-black/90 p-8 rounded-2xl w-[500px] max-w-[90vw] h-[80vh] overflow-y-auto scrollbar-thin scrollbar-thumb-purple-600 scrollbar-track-neutral-200 scrollbar-thumb-rounded-lg flex flex-col gap-4 border border-neutral-700/50 ${animationClass} glass-card`}
+            className={`relative backdrop-blur-lg bg-black/90 p-8 rounded-2xl w-[500px] max-w-[90vw] h-[80vh] overflow-y-auto scrollbar-thin scrollbar-thumb-purple-600 scrollbar-track-neutral-200 scrollbar-thumb-rounded-lg flex flex-col gap-4 border border-neutral-700/50 ${animationClass} glass-card`}
           >
             <button
               onClick={closeModel}

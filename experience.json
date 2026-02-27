@@ -1,5 +1,24 @@
 [
   {
+  "title": "AI Engineer",
+  "company": "Deploy Boys (Remote)",
+  "location": "San Francisco, CA",
+  "period": "Sept 2025 - Present",
+  "description": "Architected scalable backend systems and multi-agent AI automation platforms integrating LLM reasoning with real-world tools. Built secure JWT-based APIs, deployed 8+ AI agents using OpenClaw, implemented n8n workflow orchestration, and developed Eventbrite-integrated AI event automation pipelines for automated content generation and publishing.",
+  "technologies": [
+    "FastAPI",
+    "MongoDB",
+    "JWT",
+    "RBAC",
+    "OpenClaw",
+    "LLMs",
+    "n8n",
+    "Eventbrite API",
+    "REST APIs",
+    "Python"
+  ]
+  },
+  {
     "title": "AI Engineer Intern",
     "company": "DevNeuron (Remote)",
     "location": "Sunnyvale, CA, USA",
